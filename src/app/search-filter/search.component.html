@@ -1,0 +1,17 @@
+<div class="search">
+    <div class="sarch__tags">
+      <span
+        class="search__tag"
+        (click)="removeTag(i)"
+        *ngFor="let searchItem of searchList; let i = index">
+        {{ searchItem }}
+      </span>
+    </div>
+    
+    <button 
+      class="search__btn" 
+      type="button"
+      (click)="onClear()">
+      Clear
+    </button>
+</div>

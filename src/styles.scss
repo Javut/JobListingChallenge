@@ -1,0 +1,29 @@
+
+:root {
+    --main-color: hsl(180, 29%, 50%);
+    --very-dark-main-color: hsl(180, 14%, 20%);
+    --black-color: rgb(22, 22, 22);
+    --white-color: #fff;
+    --gray-color: gray;
+    --tag-color: hsl(180, 31%, 95%);
+    --bg-color: hsl(180, 52%, 96%);
+    --shadow-color: hsl(180, 23%, 76%);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 65%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'League Spartan', sans-serif;
+}

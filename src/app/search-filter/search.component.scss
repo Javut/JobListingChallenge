@@ -1,0 +1,63 @@
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 70px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: -11px 14px 13px -3px var(--shadow-color);
+    padding: 1.5em;
+    margin-top: -35px;
+    overflow: hidden;
+
+    &__tag {
+        position: relative;
+        display: inline-block;
+        border-radius: 5px;
+        padding: 1em;
+        margin: 0.5em .5em;
+        color: hsl(180, 29%, 50%);
+        background-color: var(--tag-color);
+        padding-right: 3.5em;
+        pointer-events: none;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 2.5em;
+            height: 100%;
+            background-color: var(--main-color);
+            position: absolute;
+            right: 0;
+            top: 0;
+            background-image: url('../../assets/images/icon-remove.svg');
+            background-size: 3;
+            background-position: center;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            pointer-events: auto;
+            transition: background-color .3s;
+        }
+
+        &:hover::after {
+            background-color: var(--very-dark-main-color);
+        }
+    }
+
+    &__btn {
+        background-color: transparent;
+        border: none;
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: var(--main-color);
+        padding: 0.5em;
+        cursor: pointer;
+        transition: text-decoration .3s;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
